@@ -55,7 +55,7 @@ or the
 
 or the 
 
-[[Front Door]]</tw-passagedata><tw-passagedata pid="2" name="Dance floor" tags="room" position="375,425" size="100,100">(set:$turntimer = $turntimer + 1) 
+[[Front Door]]</tw-passagedata><tw-passagedata pid="2" name="Dance floor" tags="room" position="400,500" size="100,100">(set:$turntimer = $turntimer + 1) 
 
 turn timer: $turntimer
 
@@ -65,6 +65,23 @@ This is the dance floor.
 [Caleigh is here.
 
 You can go talk to her here [[CaleighConvo1]]]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[Xander is here.
+
+You can go talk to him here [[XanderDFConvo1]]]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[None of your friends are here.]
 
 From here you can go to the
 
@@ -76,7 +93,7 @@ or the
 
 or the
 
-[[Alley]]</tw-passagedata><tw-passagedata pid="3" name="Lounge" tags="room" position="775,450" size="100,100">(set:$turntimer = $turntimer + 1) 
+[[Alley]]</tw-passagedata><tw-passagedata pid="3" name="Lounge" tags="room" position="775,525" size="100,100">(set:$turntimer = $turntimer + 1) 
 
 turn timer: $turntimer
 
@@ -85,7 +102,26 @@ This is the lounge.
 (if: $turntimer &lt;= 5)
 [Becca is here.
 
-You can go talk to him here [[BeccaConvo1]]]
+You can go talk to her here [[BeccaConvo1]]]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[Xander is here.
+
+You can go talk to him here [[XanderLoungeConvo1]]]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[Xander and Caleigh are here.
+
+You can go talk to them here [[C+XConvo]]]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[None of your friends are here.]
 
 From here you can go to the
 
@@ -97,31 +133,94 @@ or the
 
 or the
 
-[[Bathroom]]</tw-passagedata><tw-passagedata pid="4" name="Bathroom" tags="room" position="925,575" size="100,100">(set:$turntimer = $turntimer + 1) 
+[[Bathroom]]</tw-passagedata><tw-passagedata pid="4" name="Bathroom" tags="room" position="925,550" size="100,100">(set:$turntimer = $turntimer + 1) 
 
 turn timer: $turntimer
 
 This is the bathroom, or rather, just outside it.
 
+(if: $turntimer &lt;= 5)
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[Caleigh is here.
+
+You can go talk to her here [[CaleighBRConvo1]]]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[None of your friends are here.]
+
 From here you can go to the
 
-[[Lounge]] </tw-passagedata><tw-passagedata pid="5" name="Alley" tags="room" position="350,550" size="100,100">(set:$turntimer = $turntimer +1) 
+[[Lounge]] </tw-passagedata><tw-passagedata pid="5" name="Alley" tags="room" position="250,575" size="100,100">(set:$turntimer = $turntimer +1) 
 
 turn timer: $turntimer
 
 This is the alley.
 
+(if: $turntimer &lt;= 5)
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[Becca is here.
+
+You can go talk to her here [[BeccaAlleyConvo1]]]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[Becca is here.
+
+You can go talk to her here [[BeccaAlleyConvo2]]]
+
 From here you can go back to the
 
-[[Dance floor]] </tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="room" position="600,25" size="100,100">(set:$turntimer = $turntimer + 1) 
+[[Dance floor]] </tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="room" position="700,50" size="100,100">(set:$turntimer = $turntimer + 1) 
 
 turn timer: $turntimer
 
 This is the front door.
 
+
+(if: $turntimer &lt;= 5)
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[None of your friends are here.]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[Xander is here.
+
+You can go talk to him here [[XanderFDConvo]]]
+
 Unless you have your keys and your wallet, you&#39;ll have to go back to the
 
-[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="575,325" size="100,100">(set: $turntimer = 0)
+[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="600,350" size="100,100">(set: $turntimer = 0)
 
 This is the start of the story!
 
@@ -140,7 +239,7 @@ Where will you go?
 If Xander is unhappy show this text
 
 
-Presumably the conversation options to start the conversation are the same.</tw-passagedata><tw-passagedata pid="9" name="CaleighConvo1" tags="" position="200,375" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="BeccaConvo1" tags="" position="925,325" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="CaleighConvo2" tags="" position="375,0" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="BeccaConvo2" tags="" position="250,50" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="BCConvo1" tags="" position="200,175" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="XanderConvo2" tags="" position="425,275" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="CaleighConvo3" tags="" position="175,0" size="100,100"></tw-passagedata></tw-storydata>
+Presumably the conversation options to start the conversation are the same.</tw-passagedata><tw-passagedata pid="9" name="CaleighConvo1" tags="" position="200,375" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="BeccaConvo1" tags="" position="1025,400" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="CaleighConvo2" tags="" position="375,0" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="BeccaConvo2" tags="" position="250,50" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="BCConvo1" tags="" position="200,175" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="XanderConvo2" tags="" position="300,250" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="CaleighConvo3" tags="" position="175,0" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="XanderLoungeConvo1" tags="" position="825,250" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="C+XConvo" tags="" position="1000,175" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="XanderDFConvo1" tags="" position="175,425" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="BeccaAlleyConvo1" tags="" position="125,650" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="BeccaAlleyConvo2" tags="" position="75,650" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="XanderFDConvo" tags="" position="825,75" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="CaleighBRConvo1" tags="" position="1075,675" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
