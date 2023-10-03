@@ -9,26 +9,28 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play GoingOutOregonTrail.</tw-noscript></noscript></tw-story>
-<tw-storydata name="GoingOutOregonTrail" startnode="7" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="550,150" size="100,100">(set:$turntimer = $turntimer + 1) 
+<tw-storydata name="GoingOutOregonTrail" startnode="7" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="600,200" size="100,100">(set:$turntimer = $turntimer + 1) 
 
 turn timer: $turntimer
 
 This is the bar.
 
-(if: $turntimer &lt; 5)
+Approach the [[Bartender]].
+
+{(if: $turntimer &lt; 5)
 [Xander is here.
 
-You can go talk to him here [[XanderConvo1]]]
+You can go talk to [[Xander here]]]
 
 (if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
 [Caleigh is here.
 
-You can go talk to him here [[CaleighConvo2]]]
+You can go talk to [[Caleigh here]]]
 
 (if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
 [Becca is here.
 
-You can go talk to him here [[BeccaConvo2]]]
+You can go talk to [[Becca here]]]
 
 (if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
 [Becca and Caleigh are here.
@@ -38,24 +40,17 @@ You can go talk to them here [[BCConvo1]]]
 (if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
 [Xander is here.
 
-You can go talk to him here [[XanderConvo2]]]
+You can go talk to him [[Xander here]]]
 
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
 [Caleigh is here.
 
-You can go talk to her here [[CaleighConvo3]]]
+You can go talk to her [[Caleigh here]]]}
 
 From here you can go to the
 
-[[Dance floor]]
-
-or the 
-
-[[Lounge]]
-
-or the 
-
-[[Front Door]]</tw-passagedata><tw-passagedata pid="2" name="Dance floor" tags="room" position="400,500" size="100,100">(set:$turntimer = $turntimer + 1) 
+[[Dance floor]] or the [[Lounge]] or the [[Front Door]]
+</tw-passagedata><tw-passagedata pid="2" name="Dance floor" tags="room" position="400,500" size="100,100">(set:$turntimer = $turntimer + 1) 
 
 turn timer: $turntimer
 
@@ -64,7 +59,7 @@ This is the dance floor.
 (if: $turntimer &lt;= 5)
 [Caleigh is here.
 
-You can go talk to her here [[CaleighConvo1]]]
+You can go talk to her here [[Caleigh here]]]
 
 (if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
 [None of your friends are here.]
@@ -75,7 +70,7 @@ You can go talk to her here [[CaleighConvo1]]]
 (if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
 [Xander is here.
 
-You can go talk to him here [[XanderDFConvo1]]]
+You can go talk to him here [[Xander here]]]
 
 (if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
 [None of your friends are here.]
@@ -102,12 +97,12 @@ This is the lounge.
 (if: $turntimer &lt;= 5)
 [Becca is here.
 
-You can go talk to her here [[BeccaConvo1]]]
+You can go talk to her here [[Becca here]]]
 
 (if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
 [Xander is here.
 
-You can go talk to him here [[XanderLoungeConvo1]]]
+You can go talk to him here [[Xander here]]]
 
 (if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
 [Xander and Caleigh are here.
@@ -143,7 +138,7 @@ This is the bathroom, or rather, just outside it.
 [None of your friends are here.]
 
 (if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
-[None of your friends are here.]
+[Becca is standing in line for the bathroom. You can talk to [[Becca here]].]
 
 (if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
 [None of your friends are here.]
@@ -154,7 +149,7 @@ This is the bathroom, or rather, just outside it.
 (if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
 [Caleigh is here.
 
-You can go talk to her here [[CaleighBRConvo1]]]
+You can go talk to her here [[Caleigh here]]]
 
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
 [None of your friends are here.]
@@ -182,12 +177,12 @@ This is the alley.
 (if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
 [Becca is here.
 
-You can go talk to her here [[BeccaAlleyConvo1]]]
+You can go talk to her here [[Becca here]]]
 
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
 [Becca is here.
 
-You can go talk to her here [[BeccaAlleyConvo2]]]
+You can go talk to her here [[Becca here]]]
 
 From here you can go back to the
 
@@ -196,6 +191,15 @@ From here you can go back to the
 turn timer: $turntimer
 
 This is the front door.
+
+(if: $hasKeys is true and $hasCard is false)
+[You have your keys. Nice! But you still don&#39;t have your credit card. You probably shouldn&#39;t leave without it...]
+
+(if: $hasKeys is false and $hasCard is true)
+[You have your credit card. Nice! But you still don&#39;t have your keys. You probably shouldn&#39;t leave without them...]
+
+(if: $hasKeys is true and $hasCard is true)
+[You have your credit card and your keys. There is nothing keeping you from bae. [[Ditch your friends?]]]
 
 
 (if: $turntimer &lt;= 5)
@@ -216,17 +220,25 @@ This is the front door.
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
 [Xander is here.
 
-You can go talk to him here [[XanderFDConvo]]]
+You can go talk to him here [[Xander here]]]
 
 Unless you have your keys and your wallet, you&#39;ll have to go back to the
 
-[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="600,350" size="100,100">(set: $turntimer = 0)
-
+[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="600,350" size="100,100">{(set: $turntimer = 0)
+(set: $CaleighEvents = 0)
+(set: $hasCard = false)
+(set: $hasKeys to false)
+(set: $talkedToXanderAboutKeys = false)
+(set: $XanderisHappy = false)
+(set: $BeccaisHappy = false)
+(set: $CaleighisHappy = false)}
 This is the start of the story!
 
 You get a horny text...
 
 You need your keys and your wallet before you can go home to BAE...
+
+You remember giving your keys to Xander because he said he would DD.
 
 Where will you go?
 
@@ -239,7 +251,89 @@ Where will you go?
 If Xander is unhappy show this text
 
 
-Presumably the conversation options to start the conversation are the same.</tw-passagedata><tw-passagedata pid="9" name="CaleighConvo1" tags="" position="200,375" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="BeccaConvo1" tags="" position="1025,400" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="CaleighConvo2" tags="" position="375,0" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="BeccaConvo2" tags="" position="250,50" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="BCConvo1" tags="" position="200,175" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="XanderConvo2" tags="" position="300,250" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="CaleighConvo3" tags="" position="175,0" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="XanderLoungeConvo1" tags="" position="825,250" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="C+XConvo" tags="" position="1000,175" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="XanderDFConvo1" tags="" position="175,425" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="BeccaAlleyConvo1" tags="" position="125,650" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="BeccaAlleyConvo2" tags="" position="75,650" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="XanderFDConvo" tags="" position="825,75" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="CaleighBRConvo1" tags="" position="1075,675" size="100,100"></tw-passagedata></tw-storydata>
+Presumably the conversation options to start the conversation are the same.</tw-passagedata><tw-passagedata pid="9" name="BCConvo1" tags="" position="550,150" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="C+XConvo" tags="" position="825,600" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="Xander here" tags="" position="250,300" size="100,100">
+(if: $hasKeys is false)
+[ Ask Xander, Hey can I get my car keys?
+(click-replace: &quot;Ask Xander, Hey can I get my car keys?&quot;)[Xander replies, &quot;Oh I gave them to Becca.&quot;
+(set: $talkedToXanderAboutKeys = true)]]
+
+(if: $turntimer &lt;= 5)
+[You find Xander at the bar.
+
+Go back to the [[Bar]].]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[You find Xander in the lounge.]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[XANDER AND CALEIGH SCENE]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[You find Xander on the Dance Floor]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[You find Xander back at the bar.]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[You find Xander at the front door.]</tw-passagedata><tw-passagedata pid="12" name="Caleigh here" tags="" position="950,175" size="100,100">(if: $hasCard is false)
+[ Ask Caleigh, Do you still have my credit card?
+(click-replace: &quot;Ask Caleigh, Do you still have my credit card?&quot;)[Caleigh replies, Oh, the bartender wanted to hold onto it!
+(set: $talkedToCaleighAboutCard = true)]]
+
+(if: $turntimer &lt;= 5)
+[Return to the [[Dance floor]]]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[Return to the [[Bar]]]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[XANDER AND CALEIGH SCENE]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[You find Caleigh back at the bar.]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[You find Caleigh outside the bathroom.]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[You find Caleigh back at the bar.]</tw-passagedata><tw-passagedata pid="13" name="Becca here" tags="" position="625,675" size="100,100">
+
+(if: $talkedToXanderAboutKeys is true and $hasKeys is false)
+[ Ask Becca, Hey can I get my car keys?
+(click-replace: &quot;Ask Becca, Hey can I get my car keys?&quot;)[Becca replies, Yeah, whatever. I didn&#39;t want to DD anyway.
+(set: $hasKeys = true)]]
+
+
+(if: $turntimer &lt;= 5)
+[You find Becca in the lounge.
+
+Go back to the [[Lounge]]]
+
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+[You find Becca in line for the bathroom.
+
+Go back to the [[Bathroom]]]
+
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+[You find Becca at the bar.]
+
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+[BECCA/CALEIGH]
+
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+[You find Becca in the back alley..]
+
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+[You find Becca in the back alley.]</tw-passagedata><tw-passagedata pid="14" name="Bartender" tags="" position="925,50" size="100,100">The bartender is working swiftly behind the bar. After a moment, they turn to you.
+
+&quot;What&#39;ll it be?&quot;
+
+(if: $talkedToCaleighAboutCard is true and $hasCard is false)
+[ Ask the bartender, Hey can I close out?
+(click-replace: &quot;Ask the bartender, Hey can I close out?&quot;)[The bartender gets your name and returns shortly with your credit card.
+(set: $hasCard = true)]]
+
+Return to the [[Bar]].</tw-passagedata><tw-passagedata pid="15" name="Ditch your friends?" tags="" position="1150,25" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
