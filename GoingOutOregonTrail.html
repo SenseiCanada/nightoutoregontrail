@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play GoingOutOregonTrail.</tw-noscript></noscript></tw-story>
-<tw-storydata name="GoingOutOregonTrail" startnode="7" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="600,200" size="100,100">This is the bar.
+<tw-storydata name="GoingOutOregonTrail" startnode="25" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="600,200" size="100,100">This is the bar.
 
 Approach the [[Bartender]].
 {
@@ -139,7 +139,7 @@ Caleigh is here.
 }
 Unless you have your keys and your wallet, you&#39;ll have to go back to the
 
-[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="600,350" size="100,100">{
+[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="625,400" size="100,100">{
 (set: $turntimer = 0)
 (set: $time to 0)
 (set: $CaleighEvents = 0)
@@ -329,7 +329,22 @@ Then an image appears on your screen that makes your heart skip a beat.
 }
 It is currently $time.
 turn timer: $turntimer
-</tw-passagedata><tw-passagedata pid="24" name="BCConvo1" tags="" position="425,300" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="24" name="BCConvo1" tags="" position="425,300" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Prologue" tags="" position="550,400" size="100,100">[Welcome to Cloud9.]
+
+(click: &quot;Next&quot;)[You are you.]
+
+(click: &quot;Next&quot;)[You&#39;re here with your three best friends:[ Caleigh], Xander, and Becca to celebrate Caleigh&#39;s birthday.]
+
+(click: &quot;Next&quot;)[You met Caleigh in college where you bonded over cheap Lemon Drop shots. She can be a little pushy when it comes to parties, but you know she really just wants to make sure everyone is having a good time... herself included.]
+
+(click: &quot;Next&quot;)[Xander is your oldest friend. You two grew up together, lived next door to one another, and are practically siblings. You haven&#39;t seen each other in a while because of work, school... life. You know how it is. You were looking forward to getting to see each other tonight but haven&#39;t seen much of each other.]{
+
+}(click-replace: &quot;Next&quot;)[Becca is Caleigh&#39;s coworker and the newest addition to the friend group. You met at one of Caleigh&#39;s work functions and really hit it off due to your mutual love of board games. She&#39;s normally a calming presence around the craziness that is Caleigh, but she seems off tonight. 
+
+[[Start]]]
+
+Next
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
