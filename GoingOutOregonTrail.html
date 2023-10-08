@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play GoingOutOregonTrail.</tw-noscript></noscript></tw-story>
-<tw-storydata name="GoingOutOregonTrail" startnode="25" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="600,200" size="100,100">This is the bar.
+<tw-storydata name="GoingOutOregonTrail" startnode="24" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="450,350" size="100,100">This is the bar.
 
 Approach the [[Bartender]].
 {
@@ -33,7 +33,7 @@ Caleigh is here. You can go talk to [[Caleigh here]]
 From here you can go to the
 
 [[Dance Floor]] or the [[Lounge]] or the [[Front Door]]
-</tw-passagedata><tw-passagedata pid="2" name="Dance Floor" tags="room" position="400,500" size="100,100">This is the dance floor.
+</tw-passagedata><tw-passagedata pid="2" name="Dance Floor" tags="room" position="450,650" size="100,100">This is the dance floor.
 {
 (if: $XanderHere is true)
 [
@@ -45,7 +45,10 @@ Becca is here.
 ]
 (if: $CaleighHere is true)
 [
-Caleigh is here. You can go talk to her here [[Caleigh here]]
+Caleigh is here. (link: &quot;Go talk to her&quot;)[(set: $lastPassageName to (passage:)&#39;s name)(go-to:&quot;Caleigh here&quot;)]
+
+Caleigh tugs at your arm
+(link: &quot;Let her pull you along&quot;)[(go-to: (either: &quot;CDance&quot;, &quot;CSelfie&quot;, &quot;CShots&quot;))]
 ]
 }
 (link: &quot;Text BAE back&quot;)[(set: $lastPassageName to (passage:)&#39;s name)(go-to:&quot;This is a test: Text Bae&quot;)]
@@ -53,7 +56,7 @@ Caleigh is here. You can go talk to her here [[Caleigh here]]
 
 From here you can go to the
 
-[[Bar]] or the [[Lounge]] or the [[Alley]]</tw-passagedata><tw-passagedata pid="3" name="Lounge" tags="room" position="775,525" size="100,100">This is the lounge.
+[[Bar]] or the [[Lounge]] or the [[Alley]]</tw-passagedata><tw-passagedata pid="3" name="Lounge" tags="room" position="625,500" size="100,100">This is the lounge.
 (if: $XanderHere is true)
 [
 Xander is here. You can go talk to him here [[Xander here]]
@@ -73,7 +76,7 @@ You can go talk to them here [[C+XConvo]]
 
 From here you can go to the
 
-[[Bar]] or the [[Dance Floor]] or the [[Bathroom]]</tw-passagedata><tw-passagedata pid="4" name="Bathroom" tags="room" position="900,675" size="100,100">(set:$turntimer = $turntimer + 1) 
+[[Bar]] or the [[Dance Floor]] or the [[Bathroom]]</tw-passagedata><tw-passagedata pid="4" name="Bathroom" tags="room" position="900,525" size="100,100">(set:$turntimer = $turntimer + 1) 
 
 turn timer: $turntimer
 
@@ -94,7 +97,7 @@ Caleigh is here. You can go talk to her here [[Caleigh here]]
 
 From here you can go to the
 
-[[Lounge]] </tw-passagedata><tw-passagedata pid="5" name="Alley" tags="room" position="250,575" size="100,100">(set:$turntimer = $turntimer +1) 
+[[Lounge]] </tw-passagedata><tw-passagedata pid="5" name="Alley" tags="room" position="450,825" size="100,100">(set:$turntimer = $turntimer +1) 
 
 turn timer: $turntimer
 
@@ -113,7 +116,7 @@ Becca is here. You can go talk to her here [[Becca here]]
 Caleigh is here.
 ]
 }
-From here you can go back to the [[Dance Floor]] </tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="room" position="700,50" size="100,100">This is the front door.
+From here you can go back to the [[Dance Floor]] </tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="room" position="450,200" size="100,100">This is the front door.
 {
 (if: $hasKeys is true and $hasCard is false)
 [You have your keys. Nice! But you still don&#39;t have your credit card. You probably shouldn&#39;t leave without it...]
@@ -139,7 +142,7 @@ Caleigh is here.
 }
 Unless you have your keys and your wallet, you&#39;ll have to go back to the
 
-[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="625,400" size="100,100">{
+[[Bar]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="300,500" size="100,100">{
 (set: $turntimer = 0)
 (set: $time to 0)
 (set: $CaleighEvents = 0)
@@ -171,12 +174,12 @@ Where will you go?
 [[Dance Floor]]
 
 (link:&quot;Text BAE back&quot;) [(set: $lastPassageName to (passage: )&#39;s name)(go-to:&quot;This is a test: Text Bae&quot;)]
-</tw-passagedata><tw-passagedata pid="8" name="XanderConvo1" tags="" position="375,125" size="100,100">if Xander is happy show this text
+</tw-passagedata><tw-passagedata pid="8" name="XanderConvo1" tags="" position="1775,125" size="100,100">if Xander is happy show this text
 
 If Xander is unhappy show this text
 
 
-Presumably the conversation options to start the conversation are the same.</tw-passagedata><tw-passagedata pid="9" name="C+XConvo" tags="" position="1000,475" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="Xander here" tags="" position="250,300" size="100,100">
+Presumably the conversation options to start the conversation are the same.</tw-passagedata><tw-passagedata pid="9" name="C+XConvo" tags="" position="1600,125" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="Xander here" tags="" position="200,275" size="100,100">
 (if: $hasKeys is false)
 [ Ask Xander, Hey can I get my car keys?
 (click-replace: &quot;Ask Xander, Hey can I get my car keys?&quot;)[Xander replies, &quot;Oh I gave them to Becca.&quot;
@@ -200,12 +203,16 @@ Go back to the [[Bar]].]
 [You find Xander back at the bar.]
 
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
-[You find Xander at the front door.]</tw-passagedata><tw-passagedata pid="11" name="Caleigh here" tags="" position="850,300" size="100,100">(if: $hasCard is false)
-[ Ask Caleigh, Do you still have my credit card?
-(click-replace: &quot;Ask Caleigh, Do you still have my credit card?&quot;)[Caleigh replies, Oh, the bartender wanted to hold onto it!
-(set: $talkedToCaleighAboutCard = true)]]
+[You find Xander at the front door.]</tw-passagedata><tw-passagedata pid="11" name="Caleigh here" tags="" position="700,300" size="100,100">(if: $hasCard is false)
+[placeholder: Caleigh is here doing her thing]
 
-(if: $turntimer &lt;= 5)
+(if: $talkedToCaleighAboutCard is false)[
+[[Hey, Caleigh, do you still have my card?-&gt;Caleigh Card]]
+]
+
+(if: $time is &quot;1:00 am&quot; or &quot;1:15 am&quot; or &quot;1:45 am&quot;)
+[(redirect: &quot;Main Caleigh 1&quot;)]
+&lt;!--(if: $turntimer &lt;= 5)
 [Return to the [[Dance Floor]]]
 
 (if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
@@ -221,7 +228,7 @@ Go back to the [[Bar]].]
 [You find Caleigh outside the bathroom.]
 
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
-[You find Caleigh back at the bar.]</tw-passagedata><tw-passagedata pid="12" name="Becca here" tags="" position="550,700" size="100,100">
+[You find Caleigh back at the bar.]--&gt;</tw-passagedata><tw-passagedata pid="12" name="Becca here" tags="" position="650,775" size="100,100">
 
 (if: $talkedToXanderAboutKeys is true and $hasKeys is false)
 [ Ask Becca, Hey can I get my car keys?
@@ -262,7 +269,7 @@ The bartender is working swiftly behind the bar. After a moment, they turn to yo
 ]}
 {(if: $talkedToCaleighAboutCard is false)
 [You still don&#39;t know where your credit card is]}
-(link: &quot;Nevermind, I&#39;m good.&quot;)[(go-to:&quot;Bar&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Ditch your friends?" tags="" position="1150,25" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="This is a test: Text Bae" tags="" position="75,75" size="100,100">You pull out your phone and hesitate between two options:
+(link: &quot;Nevermind, I&#39;m good.&quot;)[(go-to:&quot;Bar&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Ditch your friends?" tags="" position="1150,25" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="This is a test: Text Bae" tags="" position="1400,125" size="100,100">You pull out your phone and hesitate between two options:
 
 [[ &quot;Option 1&quot; -&gt; BAE&#39;s Response]]
 
@@ -273,25 +280,23 @@ The bartender is working swiftly behind the bar. After a moment, they turn to yo
 
 (link: &quot;Take the shot to a friend&quot;)[(go-to: &quot;Bar&quot;) (set: $Drinks = $Drinks + 1)]</tw-passagedata><tw-passagedata pid="17" name="Can I close out?" tags="" position="1225,275" size="100,100">You close out your tab and retrieve your card.
 
-(link: &quot;Go back to the Bar&quot;)[(go-to:&quot;Bar&quot;)(set: $hasCard to true)]</tw-passagedata><tw-passagedata pid="18" name="Caleigh Events" tags="" position="1200,500" size="100,100">You feel Caleigh tugging at your arm.
-
-(link: &quot;Let her pull you along&quot;)[(go-to: (either: &quot;CDance&quot;, &quot;CSelfie&quot;, &quot;CShots&quot;))]</tw-passagedata><tw-passagedata pid="19" name="CDance" tags="" position="1100,600" size="100,100">&lt;!--(storylet: when $CaleighEvent = true)--&gt;
+(link: &quot;Go back to the Bar&quot;)[(go-to:&quot;Bar&quot;)(set: $hasCard to true)]</tw-passagedata><tw-passagedata pid="18" name="CDance" tags="" position="1125,800" size="100,100">(storylet: when $talkedToCaleighAboutCard is true)
 
 Come dance with me!
 
-(link: &quot;Dance with Caleigh&quot;)[(go-to: &quot;Bar&quot;)(set:$CaleighEvents = $CaleighEvents +1)]</tw-passagedata><tw-passagedata pid="20" name="CShots" tags="" position="1200,600" size="100,100">&lt;!--(storylet: when $CaleighEvent = true)--&gt;
+(link: &quot;Dance with Caleigh&quot;)[(go-to: &quot;Bar&quot;)(set:$CaleighEvents = $CaleighEvents +1)]</tw-passagedata><tw-passagedata pid="19" name="CShots" tags="" position="1225,800" size="100,100">(storylet: when $CaleighEvent is true)
 
 Come take a shot with me!
 
-(link: &quot;Take a shot with Caleigh&quot;)[(go-to: &quot;Bar&quot;)(set:$CaleighEvents = $CaleighEvents +1)(set: $Drunk = $Drunk +1)]</tw-passagedata><tw-passagedata pid="21" name="CSelfie" tags="" position="1300,600" size="100,100">&lt;!--(storylet: when $CaleighEvent = true)--&gt;
+(link: &quot;Take a shot with Caleigh&quot;)[(go-to: &quot;Bar&quot;)(set:$CaleighEvents = $CaleighEvents +1)(set: $Drunk = $Drunk +1)]</tw-passagedata><tw-passagedata pid="20" name="CSelfie" tags="" position="1325,800" size="100,100">(storylet: when $CaleighEvent is true)
 
 This one&#39;s for the Gram!
 
-(link: &quot;Pose for a selfie with Caleigh&quot;)[(go-to: &quot;Bar&quot;)(set:$CaleighEvents = $CaleighEvents +1)(set: $Drunk = $Drunk +1)]</tw-passagedata><tw-passagedata pid="22" name=" BAE&#39;s Response" tags="" position="75,250" size="100,100">Three dots appear above your keyboard.
+(link: &quot;Pose for a selfie with Caleigh&quot;)[(go-to: &quot;Bar&quot;)(set:$CaleighEvents = $CaleighEvents +1)(set: $Drunk = $Drunk +1)]</tw-passagedata><tw-passagedata pid="21" name=" BAE&#39;s Response" tags="" position="1400,275" size="100,100">Three dots appear above your keyboard.
 
 Then an image appears on your screen that makes your heart skip a beat.
 
-(link: &quot;You quickly put your phone away.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="23" name="Header" tags="header" position="500,0" size="100,100">{
+(link: &quot;You quickly put your phone away.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="22" name="Header" tags="header" position="100,100" size="100,100">{
 (set:$turntimer = $turntimer + 1)
 
 (set: $XanderLocation to (a: (dm: &quot;Bar&quot;, &quot;12:30 am&quot;), (dm: &quot;Lounge&quot;, &quot;12:45 am&quot;), (dm: &quot;Lounge&quot; , &quot;1:00 am&quot;), (dm: &quot;Dance Floor&quot; , &quot;1:15 am&quot;), (dm: &quot;Bar&quot;, &quot;1:30 am&quot;), (dm: &quot;Front Door&quot;, &quot;1:45 am&quot;)))
@@ -329,7 +334,7 @@ Then an image appears on your screen that makes your heart skip a beat.
 }
 It is currently $time.
 turn timer: $turntimer
-</tw-passagedata><tw-passagedata pid="24" name="BCConvo1" tags="" position="425,300" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Prologue" tags="" position="550,400" size="100,100">[Welcome to Cloud9.]
+</tw-passagedata><tw-passagedata pid="23" name="BCConvo1" tags="" position="1950,125" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Prologue" tags="" position="100,500" size="100,100">[Welcome to Cloud9.]
 
 (click: &quot;Next&quot;)[You are you.]
 
@@ -344,7 +349,21 @@ turn timer: $turntimer
 [[Start]]]
 
 Next
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="25" name="Caleigh Card" tags="" position="850,250" size="100,100">&quot;No the bartender has it. Your tab&#39;s still open&quot;
+{(set: $talkedToCaleighAboutCard = true)}
+
+(link:&quot;Got it, thanks, Caleigh!&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="26" name="Main Caleigh 1" tags="" position="1100,400" size="100,100">You see Caleigh at the bar. She&#39;s ordered a round of lemon drops, your favorite. She beckons you over.
+
+&quot;Heeeeeey bitch, we&#39;re doing shots!!&quot;
+
+[[Shots! Shots! Shots! -&gt; Take the shot]]
+(link: &quot;Not right now Caleigh&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="27" name=" Take the shot" tags="" position="1100,525" size="100,100">//Your cheeks pucker as the shot pours into your throat//
+(set: $CaleighEvents = $CaleighEvents +1)
+Caleigh looks at you with drunken approval.
+&quot;Cheeeeers!&#39;&#39;
+
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="28" name="Footer" tags="footer" position="300,100" size="100,100">(if: tags of (passage:) contains &quot;room&quot;)
+[(set: $lastPassageName to (passage: )&#39;s name)]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
