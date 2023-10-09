@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>GoingOutOregonTrail</title>
+<title>GOO</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 50%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0.25) 0%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play GoingOutOregonTrail.</tw-noscript></noscript></tw-story>
-<tw-storydata name="GoingOutOregonTrail" startnode="20" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*tw-story {
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play GOO.</tw-noscript></noscript></tw-story>
+<tw-storydata name="GOO" startnode="20" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="05771C2A-66FB-433D-B810-FB6277D06CB8" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*tw-story {
                background-color: #0d1259;
                color: #ffffff;
                font: 120% Georgia, sans-serif;
@@ -81,11 +81,11 @@ Becca and Caleigh are here. You can go talk to them here [[BCConvo1]]
 ]
 (else-if: $BeccaHere is true )
 [
-Becca is here. You can go talk to [[BeccaMainPage]]
+[[Becca is here.-&gt;BeccaMainPage]]
 ]
 (else-if: $CaleighHere is true)
 [
-Caleigh is here. You can go talk to [[CaleighMainPage]]
+[[Caleigh is here. -&gt;CaleighMainPage]]
 ]}
 
 From here you can go to the [[Dance Floor]] or the [[Lounge]] or the [[Front Door]]
@@ -109,7 +109,7 @@ From here you can go to the [[Dance Floor]] or the [[Lounge]] or the [[Front Doo
 
 From here you can go to the [[Bar]] or the [[Lounge]] or the [[Alley]].</tw-passagedata><tw-passagedata pid="3" name="Lounge" tags="room" position="625,500" size="100,100">This is the lounge.
 
-{(if: $XanderHere is true)
+{(if: $XanderHere is true and $CaleighHere is false)
 [
 [[Xander is here.-&gt;XanderMainPage]]
 ]
@@ -117,13 +117,13 @@ From here you can go to the [[Bar]] or the [[Lounge]] or the [[Alley]].</tw-pass
 [
 [[Becca is here.-&gt;BeccaMainPage]]
 ]
-(if: $CaleighHere is true)
+(if: $CaleighHere is true and $XanderHere is false)
 [
 [[Caleigh is here.-&gt;CaleighMainPage]]
 ]
 (if: $CaleighHere is true and $XanderHere is true)
 [
-You can go talk to them here [[C+XConvo]]
+Caleigh and Xander are here. You can go talk to them here [[C+XConvo]]
 ]}
 
 From here you can go to the [[Bar]] or the [[Dance Floor]] or the [[Bathroom]]</tw-passagedata><tw-passagedata pid="4" name="Bathroom" tags="room" position="900,525" size="100,100">This is the bathroom, or rather, just outside it.
@@ -193,6 +193,7 @@ From here you can go back to the [[Dance Floor]].</tw-passagedata><tw-passagedat
 }
 
 Back to the [[Bar]].</tw-passagedata><tw-passagedata pid="7" name="Start" tags="start" position="300,500" size="100,100">{
+(set: $gameover to 0)
 (set: $turntimer = 0)
 (set: $time to 0)
 (set: $CaleighEvents = 0)
@@ -208,6 +209,11 @@ Back to the [[Bar]].</tw-passagedata><tw-passagedata pid="7" name="Start" tags="
 (set: $Drinks= 0)
 (set: $CaleighEvents = 0)
 (set: $confrontedXander = false)
+(set: $baeHookup = false)
+(set: $withBecca = false)
+(set: $confrontedXander = false)
+(set: $stoppedXanderDrinking = false)
+
 }
 You&#39;ve been here for a couple hours already. You are in the middle of the dance floor, happily trashed and tearing it up when you get a text from your most recent Tinder match. BAE.
 
@@ -231,7 +237,44 @@ You&#39;ve been here for a couple hours already. You are in the middle of the da
 
 Next
 
-</tw-passagedata><tw-passagedata pid="8" name="C+XConvo" tags="" position="1100,400" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="XanderMainPage" tags="" position="250,300" size="100,100">(if: $hasKeys is false)[
+</tw-passagedata><tw-passagedata pid="8" name="C+XConvo" tags="" position="1100,400" size="100,100">You see Xander sitting at a table with a stranger. Caleigh has approached them and is tugging on Xander&#39;s arm. &quot;Xandeeeeeer! Birthday selfie! C&#39;mooooon!&quot;
+
+Xander looks noticeably annoyed. &quot;I&#39;m kinda in the middle of something Caleigh...&quot; He looks over at you for assistance.
+
+|links&gt;[{
+	(link: &quot;Pull Caleigh away and explain that she&#39;s being rude interrupting their conversation.&quot;)[
+		(replace: ?links)[Pull Caleigh away and explain that she&#39;s being a third wheel.]
+		(show: ?reply1)]
+	
+	&lt;br&gt;
+	(link: &quot;Distract Caleigh by offering to take a selfie with her over by a cool statue so Xander can continue his conversation with the stranger.&quot;)[
+		(replace: ?links)[Distract Caleigh by offering to take a selfie with her over by a cool statue so Xander can continue his conversation with the stranger.]
+		(show: ?reply2)]
+	
+	&lt;br&gt;
+	(link: &quot;Xander, c&#39;mon man, it&#39;s Caleigh&#39;s birthday. Let&#39;s take a picture together.&quot;)[
+		(replace: ?links)[Xander, c&#39;mon man, it&#39;s Caleigh&#39;s birthday. Let&#39;s take a picture together.]
+		(show: ?reply3)
+	]
+	&lt;br&gt;
+
+}]
+
+{
+|reply1)[
+	Caleigh scowls, &quot;Well excuse me! It&#39;s not like we&#39;re here celebrating my birthday or anything!&quot; she says before stomping off.]
+|reply2)[
+	Caleigh&#39;s face lights up as you pull her over to the cool art piece. &quot;Oh my god. Yes. Love it. You have such a good eye!&quot;
+    (set: $CaleighEvents = $CaleighEvents+1)
+]
+|reply3)[
+	Xander sighs and asks the girl he&#39;s talking to wait one second while he stands up and joins you and Caleigh for a picture. The woman rolls her eyes and walks away as Caleigh throws her arms around the both of you and squeals &quot;Cheeeeeese!&quot; Xander looks annoyed.
+    (set: $CaleighEvents = $CaleighEvents+1)
+    (set: $XanderEvents = $XanderEvents+1)]
+
+}
+
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="9" name="XanderMainPage" tags="convo" position="250,300" size="100,100">(if: $hasKeys is false)[
 [[Hey, can I get my car keys? -&gt;XanderKeys]]
 ]
 
@@ -265,7 +308,7 @@ Go back to the [[Bar]].]
 [You find Xander back at the bar.]
 
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
-[You find Xander at the front door.]--&gt;</tw-passagedata><tw-passagedata pid="10" name="CaleighMainPage" tags="" position="700,300" size="100,100">(if: $hasCard is false)
+[You find Xander at the front door.]--&gt;</tw-passagedata><tw-passagedata pid="10" name="CaleighMainPage" tags="convo" position="700,300" size="100,100">(if: $hasCard is false)
 [Caleigh is on her phone, mouthing along to the song playing on the dance floor.]
 
 (if: $talkedToCaleighAboutCard is false)[
@@ -295,7 +338,7 @@ Go back to the [[Bar]].]
 [You find Caleigh outside the bathroom.]
 
 (if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
-[You find Caleigh back at the bar.]--&gt;</tw-passagedata><tw-passagedata pid="11" name="BeccaMainPage" tags="" position="650,775" size="100,100">(if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
+[You find Caleigh back at the bar.]--&gt;</tw-passagedata><tw-passagedata pid="11" name="BeccaMainPage" tags="convo" position="650,775" size="100,100">(if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
 [[ Ask Becca, Hey can I get my car keys? -&gt; BeccaKeys]]
 ]
 
@@ -348,23 +391,23 @@ The bartender is working swiftly behind the bar. After a moment, they turn to yo
 [[ &quot;Option 1&quot; -&gt; BAE&#39;s Response]]
 
 [[Option 2&quot;-&gt; BAE&#39;s Response]]
-</tw-passagedata><tw-passagedata pid="15" name="Can I get a shot?" tags="" position="1450,1100" size="100,100">The bartender pours a shot, runs your card and hands it back.
+</tw-passagedata><tw-passagedata pid="15" name="Can I get a shot?" tags="convo" position="1450,1100" size="100,100">The bartender pours a shot, runs your card and hands it back.
 
 (link: &quot;Drink the shot&quot;)[(go-to: &quot;Bar&quot;) (set: $Drunk = $Drunk + 1)]
 
-(link: &quot;Take the shot to a friend&quot;)[(go-to: &quot;Bar&quot;) (set: $Drinks = $Drinks + 1)]</tw-passagedata><tw-passagedata pid="16" name="Can I close out?" tags="" position="1575,1100" size="100,100">You close out your tab and retrieve your card.
+(link: &quot;Take the shot to a friend&quot;)[(go-to: &quot;Bar&quot;) (set: $Drinks = $Drinks + 1)]</tw-passagedata><tw-passagedata pid="16" name="Can I close out?" tags="convo" position="1575,1100" size="100,100">You close out your tab and retrieve your card.
 
 (link: &quot;Go back to the Bar&quot;)[(go-to:&quot;Bar&quot;)(set: $hasCard to true)]</tw-passagedata><tw-passagedata pid="17" name=" BAE&#39;s Response" tags="convo" position="1900,1100" size="100,100">Three dots appear above your keyboard.
 
 Then an image appears on your screen that makes your heart skip a beat.
 
 (link: &quot;You quickly put your phone away.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="18" name="Header" tags="header" position="100,325" size="100,100">{
-(if: tags of (passage:) does not contain &quot;start&quot;)
+(if: tags of (passage:) does not contain &quot;start&quot; or &quot;ending&quot;)
 [
 (set:$turntimer = $turntimer + 1)
 
 (if: tags of (passage:) contains &quot;convo&quot;)
-[(set: $currentTurn = $turntimer -1)]
+[(set: $currentTurn = $turntimer -2)]
 
 (if: tags of (passage:) contains &quot;room&quot; and $inConvo is true)
 [(set: $turntimer = $currentTurn)(set: $inConvo to false)]
@@ -407,13 +450,35 @@ Then an image appears on your screen that makes your heart skip a beat.
 (if: $XanderEvents &gt;= 3)
 [(set: $XanderHappy to true)]
 
-(if: $turntimer &gt;= 30)[(redirect: &quot;Endings&quot;)]
+
 ]
 }
 (if: tags of (passage:) contains &quot;room&quot;)
 [It is currently $time. turn timer: $turntimer]
 
-</tw-passagedata><tw-passagedata pid="19" name="BCConvo1" tags="" position="1100,225" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Prologue" tags="" position="100,500" size="100,100">[Welcome to Cloud9.]
+</tw-passagedata><tw-passagedata pid="19" name="BCConvo1" tags="" position="1100,225" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Prologue" tags="start" position="75,500" size="100,100">{(set: $gameover to 0)
+(set: $turntimer = 0)
+(set: $time to 0)
+(set: $CaleighEvents = 0)
+(set: $XanderEvents = 0)
+(set: $hasCard = false)
+(set: $hasKeys to false)
+(set: $talkedToXanderAboutKeys = false)
+(set: $talkedToCaleighAboutCard = false)
+(set: $XanderHappy = false)
+(set: $BeccaHappy = false)
+(set: $CaleighHappy = false)
+(set: $Drunk = 0)
+(set: $Drinks= 0)
+(set: $CaleighEvents = 0)
+(set: $confrontedXander = false)
+(set: $baeHookup = false)
+(set: $withBecca = false)
+(set: $confrontedXander = false)
+(set: $stoppedXanderDrinking = false)
+
+}
+[Welcome to Cloud9.]
 
 (click: &quot;Next&quot;)[You are you.]
 
@@ -421,19 +486,27 @@ Then an image appears on your screen that makes your heart skip a beat.
 
 (click: &quot;Next&quot;)[You met Caleigh in college where you bonded over cheap Lemon Drop shots. She can be a little pushy when it comes to parties, but you know she really just wants to make sure everyone is having a good time... herself included.]
 
-(click: &quot;Next&quot;)[Xander is your oldest friend. You two grew up together, lived next door to one another, and are practically siblings. You haven&#39;t seen each other in a while because of work, school... life. You know how it is. You were looking forward to getting to see each other tonight but haven&#39;t seen much of each other.]{
+(click: &quot;Next&quot;)[Xander is your oldest friend. You two grew up together, lived next door to one another, and are practically siblings. He&#39;s a great listener and always makes time for his friends. You haven&#39;t seen each other in a while because of work, school... life. You know how it is. You were looking forward to getting to see each other tonight but haven&#39;t seen much of each other.]{
 
 }(click-replace: &quot;Next&quot;)[Becca is Caleigh&#39;s coworker and the newest addition to the friend group. You met at one of Caleigh&#39;s work functions and really hit it off due to your mutual love of board games. She&#39;s normally a calming presence around the craziness that is Caleigh, but she seems off tonight. 
 
 [[Start]]]
 
 Next
-</tw-passagedata><tw-passagedata pid="21" name="Caleigh Card" tags="Caleigh convo" position="1500,0" size="100,100">&quot;No the bartender has it. Your tab&#39;s still open&quot;
+</tw-passagedata><tw-passagedata pid="21" name="Caleigh Card" tags="Caleigh convo" position="1325,75" size="100,100">Caleigh looks up from what she was doing and gives you a big smile. &quot;No the bartender has it. Your tab&#39;s still open.&quot;
 {(set: $talkedToCaleighAboutCard to true)}
 
-(link:&quot;Got it, thanks, Caleigh!&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="22" name="CaleighBar1" tags="convo Caleigh" position="1625,0" size="100,100">You see Caleigh at the bar. She&#39;s ordered a round of lemon drops, your favorite. She beckons you over.
+(link:&quot;Got it, thanks, Caleigh!&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="22" name="CaleighBar1" tags="convo Caleigh" position="1625,0" size="100,100">You see Caleigh at the bar. (if: $CaleighHappy is true)
+[It looks like she&#39;s enjoying herself.]
+(else:)
+[It looks like she&#39;s eager to get the party started.]
+She&#39;s ordered a round of lemon drops, your favorite. She beckons you over.
 
 &quot;Heeeeeey bitch, we&#39;re doing shots!!&quot;
+
+(if: $talkedToCaleighAboutCard is false and $hasCard is false)[
+[[ //Ask Caleigh,// Hey, do you still have my card? -&gt;Caleigh Card]]
+]
 
 [[Shots! Shots! Shots! -&gt; Take the shot]]
 
@@ -446,21 +519,34 @@ Caleigh looks at you with drunken approval.
 (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="24" name="Footer" tags="footer" position="100,700" size="100,100">(if: tags of (passage:) contains &quot;room&quot;)
 [(set: $lastPassageName to (passage: )&#39;s name)]
 (if: tags of (passage:) contains &quot;convo&quot;)
-[(set: $inConvo to true)]</tw-passagedata><tw-passagedata pid="25" name="CaleighDF1" tags="convo Caleigh" position="1750,0" size="100,100">//Caleigh yells lines from the chorus at you as she grabs your hand.//
+[(set: $inConvo to true)]
+(if: $gameover is 0)[
 
-&quot;Ugh this is such a bop!&quot;
+(if: $turntimer &gt; 30)[(redirect: &quot;Endings&quot;)]
+
+]</tw-passagedata><tw-passagedata pid="25" name="CaleighDF1" tags="convo Caleigh" position="1750,0" size="100,100">//Caleigh yells lines from the chorus at you as she grabs your hand, pulling you in to dance with her.//
+
+&quot;Ugh, this is such a bop!&quot; //You&#39;ve never heard the song before, but you take her word for it..//
+
+(if: $talkedToCaleighAboutCard is false and $hasCard is false)[
+[[ //Ask Caleigh,// Hey, do you still have my card? -&gt;Caleigh Card]]]
 
 [[Sing along as you throw your hands up-&gt; Dance with Caleigh]]
 
-(link: &quot;Hold on, be right back.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="26" name=" Dance with Caleigh" tags="Caleigh convo" position="1750,125" size="100,100">//You can feel the bass coursing through you like a heartbeat.//
+(link: &quot;Hold on, be right back.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="26" name=" Dance with Caleigh" tags="Caleigh convo" position="1750,125" size="100,100">//You can feel the bass coursing through you like a heartbeat as the two of you start to dance together. //
 (set: $CaleighEvents = $CaleighEvents +1)
 Elated, Caleigh bounces to the beat and laughs.
 &quot;I love that song!&#39;&#39;
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="27" name="CaleighLounge1" tags="convo Caleigh" position="1875,0" size="100,100">Sitting in a plush alcove, Caleigh is angling her phone for a selfie.
-
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="27" name="CaleighLounge1" tags="convo Caleigh" position="1875,0" size="100,100">Sitting in a plush alcove, Caleigh is angling her phone for a selfie. (if: $CaleighHappy is true)
+[It looks like Caleigh is trying to take as many pictures as possible to remember this night.]
+(else:)
+[She looks a little bored.] Her eyes light up as she sees you and she beckons you into the booth excitedly.
 &quot;Get in here!&quot;
-
+{
+(if: $talkedToCaleighAboutCard is false and $hasCard is false)[
+[[ //Ask Caleigh,// Hey, do you still have my card? -&gt;Caleigh Card]]]
+}
 [[Scoot in beside her and mirror her duck face -&gt; Caleigh Selfie]]
 
 (link: &quot;Give me a sec, be right back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="28" name=" Caleigh Selfie" tags="convo Caleigh" position="1875,125" size="100,100">//Caleigh snaps a flurry of selfies.//
@@ -468,28 +554,36 @@ Elated, Caleigh bounces to the beat and laughs.
 Caleigh puts an arm around your shoulders and squeezes her cheek against yours.
 &quot;I&#39;m so glad you&#39;re here with me right now.&#39;&#39;
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="29" name="XanderKeys" tags="convo Xander" position="1475,275" size="100,100">Xander takes his arm off the shoulder of the attractive stranger he was talking to.
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="29" name="XanderKeys" tags="convo Xander" position="1350,200" size="100,100">//Xander takes his arm off the shoulder of the attractive stranger he was talking to.//
 
 &quot;Oh, sorry, I gave them to Becca&quot;
 //You smell alcohol on his breath as he leans in to be heard over the music.//
 (set: $talkedToXanderAboutKeys to true)
-(link:&quot;Ok, I&#39;ll go find her.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="30" name=" BeccaKeys" tags="convo Becca" position="1500,650" size="100,100">//Becca has her arms crossed over her chest and is looking at Xander reproachfully.//
+(link:&quot;Ok, I&#39;ll go find her.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="30" name=" BeccaKeys" tags="convo Becca" position="1500,650" size="100,100">//Becca rolls her eyes as she reaches into her back pocket to fish out your car keys..//
 &quot;Yeah, whatever, I didn&#39;t want to be DD anyway.&quot;
 (set: $hasKeys to true)
 (link:&quot;Thanks, Becca.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="31" name="CaleighBathroom1" tags="convo Caleigh" position="2000,0" size="100,100">Caleigh is waiting in line for the bathroom.
 
 Maybe you can [[bring her a shot-&gt; Take the shot]] or offer to [[take a selfie with her-&gt; Caleigh Selfie]]?
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="32" name="XanderBar1" tags="convo Xander" position="1650,275" size="100,100">Xander is at the bar. He greets you with a big grin but his normally keen stare is a little unfocused. He is clearly two or three drinks ahead of you. He currently has his arm wrapped around a new girl and is ordering another round of drinks.
-
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="32" name="XanderBar1" tags="convo Xander" position="1500,300" size="100,100">Xander is at the bar. (if: $XanderHappy is true)
+[He gives you a sheepish grin and sips a glass of water.]
+(else:)
+[He greets you with a big grin but his normally keen stare is a little unfocused. He is clearly two or three drinks ahead of you. He currently has his arm wrapped around a new girl and is ordering another round of drinks.]
+(if: $stoppedXanderDrinking is false)[
+[[Slide onto the barstool next to him.-&gt;stop Drinking]].]
+{
 (if: $talkedToXanderAboutKeys is false and $hasKeys is false)[
-[[ Ask Xander, Hey, dude, can I get my car keys? -&gt;XanderKeys]]
+[[ //Ask Xander,// Hey, dude, can I get my car keys? -&gt;XanderKeys]]
 ]
 
-Maybe you should convince him to [[stop Drinking]].
+(if: $XanderHappy is true and $BeccaCrushConvo is true and $withBecca is false)[
+[[ Tell Xander what happened with Becca. -&gt;Send X to B]]]}
 
-(if: $XanderEvents &gt;= 2)
-[Xander has been acting weird all night. Maybe you should talk to him?-&gt;you can confront him]
+
+
+(if: $XanderEvents &gt;= 2 and $confrontedXander is false)
+[[[Xander has been acting weird all night. Maybe you should talk to him?-&gt;you can confront him]]]
 
 (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="33" name="cock block him" tags="convo Xander" position="1875,475" size="100,100">You push your way through the throng of sweaty, dancing bodies, making your way over to where Xander and the girl are dancing. The two don&#39;t even seem to notice your arrival. Their eyes are closed, swaying together in time with the music.
 
@@ -519,7 +613,7 @@ You shake your head in dismay as you stare at your drunk friend. &quot;You&#39;r
 Xander looks like he&#39;s about to respond, but before he can he turns to apologize to his dance partner... who has already disappeared into the crowd.
 
 He scowls at you and leaves.
-    (set: $confrontedXander to true)
+    (set: $cockblockedXander to true)
     (set: $XanderEvents = $XanderEvents +1)
 ]
 
@@ -529,9 +623,9 @@ He scowls at you and leaves.
 }
 
 (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]
-</tw-passagedata><tw-passagedata pid="34" name="stop Drinking" tags="convo Xander" position="1725,475" size="100,100">The bartender sets another round of shots down in front of Xander and the stranger right as you approach.
+</tw-passagedata><tw-passagedata pid="34" name="stop Drinking" tags="convo Xander" position="1625,500" size="100,100">//The bartender sets another round of shots down in front of Xander and the stranger right as you approach.
 
-Xander looks up at you with a grin. &quot;Yoooo! You want in?&quot;
+Xander looks up at you with a grin.// &quot;Yoooo! You want in?&quot;
 
 |links&gt;[{
 	(link: &quot;Hell yeah!&quot;)[
@@ -554,11 +648,11 @@ Xander looks up at you with a grin. &quot;Yoooo! You want in?&quot;
 
 {
 |reply1)[
-	Xander gets you a shot too. You cheers and down the vodka.
+	Xander gets you a shot too. You cheers and down the vodka. It burns going down.
     (set: $drinks = $drinks +1)  
 ]
-|reply2)[
-	Xander scowls.
+|reply2)[(set: $stoppedXanderDrinking = true)
+	Xander frowns, looking disappointed. (if: $drinks&lt;2)[He&#39;s not normally such a heavy drinker. It&#39;s kind of weird that he&#39;s going so hard tonight.]
     (set: $XanderEvents = $XanderEvents +1)
 ]
 |reply3)[
@@ -566,7 +660,7 @@ Xander looks up at you with a grin. &quot;Yoooo! You want in?&quot;
 
 }
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="35" name="you can confront him" tags="convo Xander" position="2000,475" size="100,100">You approach Xander. He scowls as he looks up at you. 
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="35" name="you can confront him" tags="convo Xander" position="2025,500" size="100,100">You approach Xander. He scowls as he looks up at you. 
 
 &quot;What the fuck do you want?
 
@@ -590,78 +684,140 @@ Xander looks up at you with a grin. &quot;Yoooo! You want in?&quot;
 }]
 
 {
-|reply1)[
-	Xander is happy
+|reply1)[(set: $confrontedXander = true)
+	Xander opens his mouth as though he is about to argue but seems to think better of it. Eventually, he sighs and nods. &quot;I&#39;ve... had a rough couple of days...&quot;
+ &lt;br&gt;
+ 
+ What&#39;s going on?
+ 
+ (click-replace:&quot;What&#39;s going on?&quot;)[Xander&#39;s eyes turn down. &quot;My parents are splitting up. They told me a couple days ago. I haven&#39;t been taking it well... I&#39;m sorry for acting like a dick.&quot;
+ &lt;br&gt;
+You take a moment to console Xander, after which he smiles and tells you: &quot;I&#39;ll be okay. Thanks. Maybe I should go talk to the others.&quot;
     (set: $XanderHappy = true)  
-]
-|reply2)[
-	Xander leaves.
+]]
+|reply2)[(set: $confrontedXander = true)
+	Xander scowls, &quot;You&#39;re the one being an asshole! You&#39;ve done nothing but cock block me all night. Fuck off, dude.&quot;
+    
+    (set: $XanderPissed = true)
 ]
 |reply3)[
 	]
 
 }
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="36" name="XanderLounge1" tags="convo Xander" position="1800,275" size="100,100">Xander is in the lounge.
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="36" name="XanderLounge1" tags="convo Xander" position="1700,300" size="100,100">Xander is in the lounge.(if: $XanderHappy is true)
+[It looks like he&#39;s texting his sister.]
+(else:)
+[It looks like he&#39;s hit it off with a woman you&#39;ve never met before.]
 
 (if: $talkedToXanderAboutKeys is false and $hasKeys is false)[
 [[ Ask Xander, Hey, dude, can I get my car keys? -&gt;XanderKeys]]
 ]
 
-(if: $XanderEvents &gt;= 2)
-[Xander has been acting weird all night. Maybe you should talk to him?-&gt;you can confront him]
+(if: $XanderEvents &gt;= 2 and $confrontedXander is false)
+[[[Xander has been acting weird all night. Maybe you should talk to him? -&gt;you can confront him]]]
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="37" name="XanderDF1" tags="convo Xander" position="1925,275" size="100,100">Xander is on the dance floor. You notice that the girl he&#39;s dancing with isn&#39;t the girl he was talking to last. Fortunately, neither of them seem too worried about this fact.
+(if: $XanderHappy is true and $BeccaCrushConvo is true and $withBecca is false)[
+[[ Tell Xander what happened with Becca. -&gt;Send X to B]]]
+
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="37" name="XanderDF1" tags="convo Xander" position="1900,300" size="100,100">Xander is on the dance floor. (if: $XanderHappy is true)
+[He&#39;s blowing off steam by dancing and singing along at the top of his lungs.]
+(else:)
+[You notice that the girl he&#39;s dancing with isn&#39;t the girl he was talking to last. Fortunately, neither of them seem too worried about this fact.]
 
 (if: $talkedToXanderAboutKeys is false and $hasKeys is false)[
 [[ Ask Xander, Hey, dude, can I get my car keys? -&gt;XanderKeys]]]
 {
-}(if: $confrontedXander is false)[
+}(if: $cockblockedXander is false)[
 [[ Are you sure you want to interrupt them? -&gt;cock block him]]]
 
-(if: $XanderEvents &gt;= 2)
-[Xander has been acting weird all night. Maybe you should talk to him?-&gt;you can confront him]
+(if: $XanderEvents &gt;= 2 and $confrontedXander is false)
+[[[Xander has been acting weird all night. Maybe you should talk to him?-&gt;you can confront him]]]
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="38" name="XanderFront1" tags="convo Xander" position="2075,275" size="100,100">Xander is at the front door.
+(if: $XanderHappy is true and $BeccaCrushConvo is true and $withBecca is false)[
+[[ Tell Xander what happened with Becca. -&gt;Send X to B]]]
 
-(if: $XanderEvents &gt;= 2)
-[Xander has been acting weird all night. Maybe you should talk to him?-&gt;you can confront him]
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="38" name="XanderFront1" tags="convo Xander" position="2025,300" size="100,100">Xander is at the front door.(if: $XanderHappy is true)
+[It looks like he&#39;s ready to call it a night.]
+(else:)
+[It looks like he&#39;s about to head home with a stranger.]
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="39" name="BeccaBar1" tags="convo Becca" position="1775,650" size="100,100">Becca is at the bar.
+(if: $XanderEvents &gt;= 2 and $confrontedXander is false)
+[[[Xander has been acting weird all night. Maybe you should talk to him?-&gt;you can confront him]]]
 
-She&#39;ll say something.
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="39" name="BeccaBar1" tags="convo Becca" position="1775,650" size="100,100">Becca is leaning up against the bar, sipping on a Blue Moon. (if: $BeccaHappy is true)
+[She smiles and raises her bottle, &quot;Cheers!&quot;]
+(else:)
+[Her arms are crossed and she&#39;s staring up at one of the TV monitors playing old music videos.]
 
-(if: $Drinks &gt;= 3)
-[[[If you&#39;re drunk enough, she&#39;ll say that she&#39;s into you-&gt;BeccaCrush]]]
+(if: $Drinks &gt;= 3 and $BeccaCrushConvo is false)
+[When the one she&#39;s watching ends she finally turns back to you and says, &quot;Hey, can we talk?&quot; &lt;br&gt;[[Sure, what&#39;s up?-&gt;BeccaCrush]]]
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="40" name="BeccaLounge1" tags="convo Becca" position="1650,650" size="100,100">Becca is in the lounge.
+(if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
+[[ Ask Becca, Hey can I get my car keys? -&gt; BeccaKeys]]
+]
 
-She&#39;ll say something.
 
-(if: $Drinks &gt;= 3)
-[[[If you&#39;re drunk enough, she&#39;ll say that she&#39;s into you-&gt;BeccaCrush]]]
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="40" name="BeccaLounge1" tags="convo Becca" position="1650,650" size="100,100">Becca is sitting at a table by herself in the corner. (if: $BeccaHappy is true)
+[She blushes when you make eye contact and waves slightly.]
+(else:)
+[She immediately buries her nose in her phone when you make eye contact. ]
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="41" name="BeccaBathroom1" tags="convo Becca" position="1900,650" size="100,100">Becca is in the bathroom.
+{(if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
+[[ Ask Becca, Hey can I get my car keys? -&gt; BeccaKeys]]]}
 
-She&#39;ll say something.
+(if: $Drinks &gt;= 3 and $BeccaCrushConvo is false)
+[After a moment of sitting in awkward silence, Becca finally sighs and looks up. &quot;Hey... Can I talk to you...?&quot; &lt;br&gt;[[Sit down at the table with her.-&gt;BeccaCrush]]]
 
-(if: $Drinks &gt;= 3)
-[[[If you&#39;re drunk enough, she&#39;ll say that she&#39;s into you-&gt;BeccaCrush]]]
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="41" name="BeccaBathroom1" tags="convo Becca" position="1900,650" size="100,100">Becca is in line for the bathroom. (if: $withBecca is true)
+[She smirks when she sees you and calls out over the music: &quot;Go check on Caleigh and see if she&#39;s ready to go. I&#39;m trying to get out of here.&quot;]
+(else:)
+[She pretends not to notice you and becomes incredibly interested in the wall art.]
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="42" name="BeccaAlley1" tags="convo Becca" position="2025,650" size="100,100">Becca is outside in the alley behind the bar.
+(if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
+[[ Ask Becca, Hey can I get my car keys? -&gt; BeccaKeys]]
+]
 
-She&#39;ll say something.
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="42" name="BeccaAlley1" tags="convo Becca" position="2025,650" size="100,100">Becca is outside in the alley behind the bar sitting on an overturned milk crate. (if: $BeccaHappy is true)
+[She perks up as she sees you. &quot;Hey! I just needed a little break. It&#39;s so loud in there...&quot;]
+(else:)
+[She takes a pull from her vape and gives you a small nod, &quot;Hey.&quot;]
+(if: $Drinks &gt;= 3 and $BeccaCrushConvo is false)
+[She gestures to the milk crate next to her. &quot;Can I talk to you...?&quot; &lt;br&gt;[[Take a seat and say, &quot;Sure, what&#39;s up?&quot;-&gt;BeccaCrush]]]
 
-(if: $Drinks &gt;= 3)
-[[[If you&#39;re drunk enough, she&#39;ll say that she&#39;s into you-&gt;BeccaCrush]]]
+(if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
+[[ Ask Becca, Hey can I get my car keys? -&gt; BeccaKeys]]
+]
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="43" name="BeccaCrush" tags="convo Becca" position="1825,800" size="100,100">Placeholder conversation. At the end of which you either:
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="43" name="BeccaCrush" tags="convo Becca" position="1825,800" size="100,100">(set: $BeccaCrushConvo = true)
+Becca takes a deep breath and wipes her palms off on her skinny jeans as she starts to speak. &quot;I know I&#39;ve been acting weird tonight. I&#39;m sorry. It&#39;s just...&quot; Whatever she says next trails off into a mumble and is incomprehensible.
 
-decide to go home with Becca set: BeccaHappy to true.
+Huh?
+(click-replace: &quot;Huh?&quot;)[Becca blushes and clears her throat. &quot;I &#39;&#39;said I like you.&#39;&#39; And I just... I wasn&#39;t sure how to deal with it. But... I figure I might as well shoot my shot tonight, or not at all, right? I&#39;m not saying we have to make anything of it but... would you wanna hang out just the two of us...?&quot;
 
-get Xander to talk to Becca set: BeccaHappy to true.
+|links&gt;[{
+	[(link: &quot;I like you too, Becca. Do you... I dunno, wanna go back to my place and order pizza?&quot;)[
+		(replace: ?links)[I like you too, Becca. Do you... I dunno, wanna go back to my place and order pizza?]
+		(show: ?reply1)]
+	]
+	&lt;br&gt;
+	[(link: &quot;Oh... Becca, I&#39;m flattered but... I don&#39;t feel the same way...&quot;)[
+		(replace: ?links)[Oh... Becca, I&#39;m flattered but... I don&#39;t feel the same way...]
+		(show: ?reply2)]
+	]
+	&lt;br&gt;
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="44" name="DialogueOptionTest" tags="" position="875,875" size="100,100">|links&gt;[{
+}]
+
+|reply1)[(set: $withBecca = true)(set: $BeccaHappy = true)
+	A soft smile slowly pulls at the corners of Becca&#39;s mouth. &quot;Yeah... Yeah, I&#39;d like that a lot. But... we shouldn&#39;t bail on Caleigh&#39;s birthday just yet. We can head out when the club closes.&quot;
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]
+    ]
+|reply2)[
+	There is a long, awkward moment of silence. Becca looks almost unfazed by the news but you notice an almost imperceptible clench of her jaw. &quot;Yeah, no, that&#39;s... that&#39;s fine. I kind of figured. I just... wanted to get that off my chest...I&#39;m not great at talking to people.&quot;
+    (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]
+]
+]</tw-passagedata><tw-passagedata pid="44" name="DialogueOptionTest" tags="" position="875,875" size="100,100">|links&gt;[{
 	(link: &quot;Hell yeah!&quot;)[
 		(replace: ?links)[Hell yeah!]
 		(show: ?reply1)
@@ -696,35 +852,68 @@ get Xander to talk to Becca set: BeccaHappy to true.
 |reply4)[
 	Text related to forth line.
 ]
-}</tw-passagedata><tw-passagedata pid="45" name="Endings" tags="" position="1175,1100" size="100,100">(if: $baeHookup is true)
-[show this text]
+}</tw-passagedata><tw-passagedata pid="45" name="Endings" tags="convo ending" position="1175,1100" size="100,100">{(set:$gameover = 1)
+
+(if: $baeHookup is true)
+[Success! With your credit card and keys secured, you manage to make it home in time to meet BAE for some good, old fashioned, Netflix and Chill. You left your friends in the club to figure out their ride home on their own, but they&#39;re grown ups. They can take care of themselves.&lt;br&gt;&lt;br&gt;]
 (if: $withBecca is true)
-[show this text]
-(else:)
-[show this text]
+[Well, you wind up going home with someone, but it wasn&#39;t who you expected in the end. Becca smiles as the two of you walk out of the club and head home... after you shoot BAE a quick text telling them not to come over.&lt;br&gt;&lt;br&gt;]
+(if: $baeHookup is false and $withBecca is false)
+[You missed your hook up with BAE. The next morning when you try to message them and apologize, you realize they blocked your number.&lt;br&gt;&lt;br&gt;]
 
 (if: $CaleighHappy is true)
-[show this text]
+[Caleigh had a fantastic birthday. She posts all the pictures on Instagram, the good and the bad. You are tagged in multiple pictures. #fam #squadgoals #lovemylife&lt;br&gt;&lt;br&gt;]
 (else:)
-[show this text]
+[The next morning you check Instagram and see Caleigh posted about her birthday. It&#39;s just a bunch of selfies of her hanging out by herself in the bar.&lt;br&gt;&lt;br&gt;]
 
 (if: $XanderHappy is true)
-[show this text]
+[Xander confessed why he was having such a rough night. The two of you get lunch the next day and reminisce on growing up together. &lt;br&gt;&lt;br&gt;]
 (else:)
-[show this text]
+[Xander wound up going home with a stranger from the bar. The two of you have an awkward couple of days before you talk again. Things are weird. &lt;br&gt;&lt;br&gt;]
 
 (if: $BeccaHappy is true and $withBecca is false)
-[show this text]
+[Becca confessed her feelings for you, and while you don&#39;t reciprocate them, you managed to help make things less awkward for the both of you by getting her to talk to Xander. A couple days later she texts you to apologize and says she hopes you can still be friends. :)&lt;br&gt;&lt;br&gt;]
 (else:)
-[show this text]
+[Becca was acting weird and distant all night and you never really figured out why.&lt;br&gt;&lt;br&gt;]}
 
-The End.</tw-passagedata><tw-passagedata pid="46" name="Untitled Passage" tags="" position="1075,550" size="100,100">rooms rbg 13, 18, 89; text default
+[[[The End.-&gt;Prologue]]]</tw-passagedata><tw-passagedata pid="46" name="Untitled Passage" tags="" position="1075,550" size="100,100">rooms rbg 13, 18, 89; text default
 
 caleigh rbg 111, 64, 122 (upset); happy 137, 80, 150 (text black?)
 
 xander rbg 4, 43, 16 (upset); happy 6, 61, 23
 
-becca rbg 38, 1, 1 (upset); happy 61, 1, 1</tw-passagedata></tw-storydata>
+becca rbg 38, 1, 1 (upset); happy 61, 1, 1</tw-passagedata><tw-passagedata pid="47" name="Xander Pissed" tags="convo" position="200,175" size="100,100">Xander doesn&#39;t want anything to do with you.
+
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))</tw-passagedata><tw-passagedata pid="48" name="Send X to B" tags="convo" position="1350,400" size="100,100">You take a moment to fill Xander in on your conversation with Becca, and why she was acting so weird all night.
+
+He listens wide-eyed, hanging on to your every word. &quot;Whoahhh... Dude. I had no idea! She&#39;s got such a good poker face... So what did you say?!&quot;
+
+Tell Xander your response.
+(click-replace: &quot;Tell Xander your response.&quot;)[Xander nods slowly. &quot;Yeah, that makes sense. I mean, she&#39;s cool and all, but we kind of just met her through Caleigh...&quot;
+
+|links&gt;[{
+	[(link: &quot;Let&#39;s just give it some time. I&#39;m sure things will blow over.&quot;)[
+		(replace: ?links)[Let&#39;s just give it some time. I&#39;m sure things will blow over.]
+		(show: ?reply1)]
+	]
+	&lt;br&gt;
+	[(link: &quot;Maybe you should go talk to her? She seemed kind of down.&quot;)[
+		(replace: ?links)[Maybe you should go talk to her? She seemed kind of down.]
+		(show: ?reply2)]
+	]
+	&lt;br&gt;
+
+}]
+
+|reply1)[
+	Xander doesn&#39;t seem convinced, but he shrugs anyway, &quot;Yeah... I&#39;m sure she&#39;s fine.&quot;
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]
+    ]
+|reply2)[(set: $BeccaHappy = true)
+	Xander grins and claps your shoulder, &quot;Of course! You&#39;ve been here babysitting me all night. Lemme go take care of someone else for a change. I&#39;ll see if I can cheer her up.&quot;
+    (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]
+]
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
