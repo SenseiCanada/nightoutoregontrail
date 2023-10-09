@@ -77,7 +77,7 @@ Approach the [[Bartender]].
 ]
 (if: $CaleighHere is true and $BeccaHere is true)
 [
-[[Becca-&gt;BeccaBar1]] and [[Caleigh-&gt;CaleighBar1]] are here, but at opposite ends of the bar.]]
+[[Becca-&gt;BeccaBar1]] and [[Caleigh-&gt;CaleighBar1]] are here, but at opposite ends of the bar.
 ]
 (else-if: $BeccaHere is true )
 [
@@ -233,9 +233,7 @@ You&#39;ve been here for a couple hours already. You are in the middle of the da
 [[Lounge]]
 
 [[Dance Floor]]
-
-(link:&quot;Text BAE back&quot;) [(set: $lastPassageName to (passage: )&#39;s name)(go-to:&quot;This is a test: Text Bae&quot;)]]
-
+]
 Next
 
 </tw-passagedata><tw-passagedata pid="8" name="C+XConvo" tags="" position="1075,325" size="100,100">You see Xander sitting at a table with a stranger. Caleigh has approached them and is tugging on Xander&#39;s arm. &quot;Xandeeeeeer! Birthday selfie! C&#39;mooooon!&quot;
@@ -433,14 +431,13 @@ Then an image appears on your screen that makes your heart skip a beat.
 (else-if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
 [(set: $time to &quot;1:45 am&quot;)]
 
-
-(if: $XanderLocation contains (dm: (passage: )&#39;s name, $time and $XBtalking is false))
+(if: $XanderLocation contains (dm: (passage: )&#39;s name, $time))
 [(set: $XanderHere to true)]
-(else: )[(set: $XanderHere to false)]
+(else-if: $XBTalking is true)[(set: $XanderHere to false)]
 
-(if: $BeccaLocation contains (dm: (passage: )&#39;s name, $time and $XBtalking is false))
+(if: $BeccaLocation contains (dm: (passage: )&#39;s name, $time))
 [(set: $BeccaHere to true)]
-(else: )[(set: $BeccaHere to false)]
+(else-if: $XBTalking is true)[(set: $BeccaHere to false)]
 
 (if: $CaleighLocation contains (dm: (passage: )&#39;s name, $time))
 [(set: $CaleighHere to true)]
