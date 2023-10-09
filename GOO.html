@@ -67,7 +67,8 @@ tw-story[tags="becca"] {
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="450,350" size="100,100">This is the bar. You jostle through the crowd to find your friends.
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Bar" tags="room" position="450,350" size="100,100">(set:$turntimer = $turntimer + 1)
+This is the bar. You jostle through the crowd to find your friends.
 
 Approach the [[Bartender]].
 
@@ -89,7 +90,8 @@ Approach the [[Bartender]].
 ]}
 
 From here you can go to the [[Dance Floor]] or the [[Lounge]] or the [[Front Door]]
-</tw-passagedata><tw-passagedata pid="2" name="Dance Floor" tags="room" position="450,650" size="100,100">This is the dance floor. Swaying, sweaty bodies brush up against you as you look around.
+</tw-passagedata><tw-passagedata pid="2" name="Dance Floor" tags="room" position="450,650" size="100,100">(set:$turntimer = $turntimer + 1)
+This is the dance floor. Swaying, sweaty bodies brush up against you as you look around.
 
 {
 (if: $XanderHere is true)
@@ -105,7 +107,8 @@ From here you can go to the [[Dance Floor]] or the [[Lounge]] or the [[Front Doo
 [[Caleigh is here.-&gt;CaleighMainPage]]
 ]}
 
-From here you can go to the [[Bar]] or the [[Lounge]] or the [[Alley]].</tw-passagedata><tw-passagedata pid="3" name="Lounge" tags="room" position="625,500" size="100,100">This is the lounge. It&#39;s barely quieter than the rest of the club. At least it&#39;s easier to move around.
+From here you can go to the [[Bar]] or the [[Lounge]] or the [[Alley]].</tw-passagedata><tw-passagedata pid="3" name="Lounge" tags="room" position="625,500" size="100,100">(set:$turntimer = $turntimer + 1)
+This is the lounge. It&#39;s barely quieter than the rest of the club. At least it&#39;s easier to move around.
 
 {(if: $XanderHere is true and $CaleighHere is false)
 [
@@ -128,7 +131,8 @@ From here you can go to the [[Bar]] or the [[Lounge]] or the [[Alley]].</tw-pass
 You see Xander and Becca with their heads together. Xander sees you over Becca&#39;s shoulder and shakes his head imperceptably. Best not go over to them just yet.
 ]
 }
-From here you can go to the [[Bar]] or the [[Dance Floor]] or the [[Bathroom]]</tw-passagedata><tw-passagedata pid="4" name="Bathroom" tags="room" position="900,525" size="100,100">This is the bathroom, or rather, just outside it.
+From here you can go to the [[Bar]] or the [[Dance Floor]] or the [[Bathroom]]</tw-passagedata><tw-passagedata pid="4" name="Bathroom" tags="room" position="900,525" size="100,100">(set:$turntimer = $turntimer + 1)
+This is the bathroom, or rather, just outside it.
 
 {(if: $XanderHere is true)
 [
@@ -142,7 +146,8 @@ From here you can go to the [[Bar]] or the [[Dance Floor]] or the [[Bathroom]]</
 [
 [[Caleigh is here.-&gt;CaleighMainPage]]
 ]}
-From here you can go to the [[Lounge]].</tw-passagedata><tw-passagedata pid="5" name="Alley" tags="room" position="450,825" size="100,100">This is the alley.
+From here you can go to the [[Lounge]].</tw-passagedata><tw-passagedata pid="5" name="Alley" tags="room" position="450,825" size="100,100">(set:$turntimer = $turntimer + 1)
+This is the alley behind the club.
 
 {
 (if: $XanderHere is true)
@@ -158,7 +163,8 @@ From here you can go to the [[Lounge]].</tw-passagedata><tw-passagedata pid="5" 
 [[Caleigh is here.-&gt;CaleighMainPage]]
 ]
 }
-From here you can go back to the [[Dance Floor]].</tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="room" position="450,200" size="100,100">This is the front door.
+From here you can go back to the [[Dance Floor]].</tw-passagedata><tw-passagedata pid="6" name="Front Door" tags="room" position="450,200" size="100,100">(set:$turntimer = $turntimer + 1)
+This is the front door.
 
 {
 (if: $hasKeys is false and $hasCard is false)
@@ -207,10 +213,11 @@ Back to the [[Bar]].</tw-passagedata><tw-passagedata pid="7" name="Start" tags="
 (set: $BeccaHappy = false)
 (set: $CaleighHappy = false)
 (set: $Drunk = 0)
-(set: $Drinks= 0)
 (set: $CaleighEvents = 0)
 (set: $confrontedXander = false)
+(set: $XCResolved = false)
 (set: $baeHookup = false)
+(set: $BeccaCrushConvo = false)
 (set: $withBecca = false)
 (set: $confrontedXander = false)
 (set: $stoppedXanderDrinking = false)
@@ -236,7 +243,8 @@ You&#39;ve been here for a couple hours already. You are in the middle of the da
 ]
 Next
 
-</tw-passagedata><tw-passagedata pid="8" name="C+XConvo" tags="" position="1075,325" size="100,100">You see Xander sitting at a table with a stranger. Caleigh has approached them and is tugging on Xander&#39;s arm. &quot;Xandeeeeeer! Birthday selfie! C&#39;mooooon!&quot;
+</tw-passagedata><tw-passagedata pid="8" name="C+XConvo" tags="" position="1075,325" size="100,100">(if: $XCResolved is false)[
+You see Xander sitting at a table with a stranger. Caleigh has approached them and is tugging on Xander&#39;s arm. &quot;Xandeeeeeer! Birthday selfie! C&#39;mooooon!&quot;
 
 Xander looks noticeably annoyed. &quot;I&#39;m kinda in the middle of something Caleigh...&quot; He looks over at you for assistance.
 
@@ -272,8 +280,9 @@ Xander looks noticeably annoyed. &quot;I&#39;m kinda in the middle of something 
     (set: $XanderEvents = $XanderEvents+1)]
 
 }
-
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="9" name="XanderMainPage" tags="convo" position="250,300" size="100,100">(if: $hasKeys is false)[
+]
+(else:)[Caleigh and Xander are standing at opposite ends of the room]
+(link: &quot;Back&quot;)[(set: $XCResolved to true)(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="9" name="XanderMainPage" tags="convo" position="250,300" size="100,100">(if: $hasKeys is false)[
 [[Hey, can I get my car keys? -&gt;XanderKeys]]
 ]
 
@@ -376,6 +385,7 @@ Go back to the [[Bathroom]]]
 [You find Becca in the back alley.]--&gt;</tw-passagedata><tw-passagedata pid="12" name="Bartender" tags="convo" position="1500,1100" size="100,100">The bartender is working swiftly behind the bar. After a moment, they turn to you.
 
 &quot;What&#39;ll it be?&quot;
+
 (if: $talkedToCaleighAboutCard is true and $hasCard is false)
 [[[Can I get a shot?-&gt;Can I get a shot?]]
 
@@ -390,7 +400,7 @@ Go back to the [[Bathroom]]]
 [[Option 2&quot;-&gt; BAE&#39;s Response]]
 </tw-passagedata><tw-passagedata pid="15" name="Can I get a shot?" tags="convo" position="1450,1250" size="100,100">The bartender pours a shot, runs your card and hands it back.
 
-(link: &quot;Drink the shot&quot;)[(go-to: &quot;Bar&quot;) (set: $Drunk = $Drunk + 1)]
+(link: &quot;Drink the shot&quot;)[(set: $Drunk = $Drunk + 1)(go-to: &quot;Bar&quot;) ]
 
 (link: &quot;Take the shot to a friend&quot;)[(go-to: &quot;Bar&quot;) (set: $Drinks = $Drinks + 1)]</tw-passagedata><tw-passagedata pid="16" name="Can I close out?" tags="convo" position="1575,1250" size="100,100">You close out your tab and retrieve your card.
 
@@ -409,8 +419,6 @@ Then an image appears on your screen that makes your heart skip a beat.
 
 (if: tags of (passage:) contains &quot;room&quot; and $inConvo is true)
 [(set: $turntimer = $currentTurn)(set: $inConvo to false)]
-(else-if: tags of (passage:) contains &quot;room&quot; and $inConvo is false)[
-(set:$turntimer = $turntimer + 1)]
 
 (set: $XanderLocation to (a: (dm: &quot;Bar&quot;, &quot;12:30 am&quot;), (dm: &quot;Lounge&quot;, &quot;12:45 am&quot;), (dm: &quot;Dance Floor&quot; , &quot;1:00 am&quot;), (dm: &quot;Dance Floor&quot; , &quot;1:15 am&quot;), (dm: &quot;Bar&quot;, &quot;1:30 am&quot;), (dm: &quot;Front Door&quot;, &quot;1:45 am&quot;)))
 
@@ -420,28 +428,30 @@ Then an image appears on your screen that makes your heart skip a beat.
 
 (if: $turntimer &lt;= 5)
 [(set: $time to &quot;12:30 am&quot;)]
-(else-if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
+(if: $turntimer &gt;= 5 and $turntimer &lt; 10 )
 [(set: $time to &quot;12:45 am&quot;)]
-(else-if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
+(if: $turntimer &gt;= 10 and $turntimer &lt; 15 )
 [(set: $time to &quot;1:00 am&quot;)]
-(else-if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
+(if: $turntimer &gt;= 15 and $turntimer &lt; 20 )
 [(set: $time to &quot;1:15 am&quot;)]
-(else-if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
+(if: $turntimer &gt;= 20 and $turntimer &lt; 25 )
 [(set: $time to &quot;1:30 am&quot;)]
-(else-if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
+(if: $turntimer &gt;= 25 and $turntimer &lt; 30 )
 [(set: $time to &quot;1:45 am&quot;)]
 
 (if: $XanderLocation contains (dm: (passage: )&#39;s name, $time))
 [(set: $XanderHere to true)]
-(else-if: $XBTalking is true)[(set: $XanderHere to false)]
+(else: )[(set: $XanderHere to false)]
 
 (if: $BeccaLocation contains (dm: (passage: )&#39;s name, $time))
 [(set: $BeccaHere to true)]
-(else-if: $XBTalking is true)[(set: $BeccaHere to false)]
+(else: )[(set: $BeccaHere to false)]
 
 (if: $CaleighLocation contains (dm: (passage: )&#39;s name, $time))
 [(set: $CaleighHere to true)]
 (else: )[(set: $CaleighHere to false)]
+
+(if: $XBTalking is true)[(set: $BeccaHere to false)(set: $XanderHer to false)]
 
 (if: $CaleighEvents &gt;= 3)
 [(set: $CaleighHappy to true)]
@@ -508,7 +518,7 @@ She&#39;s ordered a round of lemon drops, your favorite. She beckons you over.
 
 (link: &quot;Not right now Caleigh&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="22" name=" Take the shot" tags="convo Caleigh" position="1625,125" size="100,100">//Your cheeks pucker as the shot pours into your throat//
 (set: $CaleighEvents = $CaleighEvents +1)
-(set: $Drinks = $Drinks +1)
+(set: $Drunk = $Drunk +1)
 Caleigh looks at you with drunken approval.
 &quot;Cheeeeers!&#39;&#39;
 
@@ -561,9 +571,9 @@ Caleigh puts an arm around your shoulders and squeezes her cheek against yours.
 
 [[&quot;I&#39;m not driving, but I&#39;m thinking about going home early.&quot;-&gt;BeccaKeys2]]</tw-passagedata><tw-passagedata pid="30" name="CaleighBathroom1" tags="convo Caleigh" position="2000,0" size="100,100">Caleigh is waiting in line for the bathroom.
 
-Maybe you can (if: $Drinks &gt; 0)[[[offer her a shot or-&gt;Take the shot]]] offer to [[take a selfie with her-&gt; Caleigh Selfie]]?
+Maybe you can offer to [[take a selfie with her-&gt; Caleigh Selfie]]?
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="31" name="XanderBar1" tags="convo Xander" position="1525,400" size="100,100">Xander is at the bar. (if: $XanderHappy is true)
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="31" name="XanderBar1" tags="convo Xander" position="1525,350" size="100,100">Xander is at the bar. (if: $XanderHappy is true)
 [He gives you a sheepish grin and sips a glass of water.]
 (else:)
 [He greets you with a big grin but his normally keen stare is a little unfocused. He is clearly two or three drinks ahead of you. He currently has his arm wrapped around a new girl and is ordering another round of drinks.]
@@ -639,10 +649,10 @@ Xander looks up at you with a grin.// &quot;Yoooo! You want in?&quot;
 {
 |reply1)[
 	Xander gets you a shot too. You cheers and down the vodka. It burns going down.
-    (set: $drinks = $drinks +1)  
+    (set: $Drunk = $Drunk +1)  
 ]
 |reply2)[(set: $stoppedXanderDrinking = true)
-	Xander frowns, looking disappointed. (if: $drinks&lt;2)[He&#39;s not normally such a heavy drinker. It&#39;s kind of weird that he&#39;s going so hard tonight.]
+	Xander frowns, looking disappointed. (if: $Drunk&lt;2)[He&#39;s not normally such a heavy drinker. It&#39;s kind of weird that he&#39;s going so hard tonight.]
     (set: $XanderEvents = $XanderEvents +1)
 ]
 |reply3)[
@@ -655,12 +665,12 @@ Xander looks up at you with a grin.// &quot;Yoooo! You want in?&quot;
 &quot;What the fuck do you want?
 
 |links&gt;[{
-	(if: $drinks &lt; 3)[(link: &quot;You&#39;re sober enough to not engage in his hostility. Instead, you say: Dude, what&#39;s going on with you? You&#39;re being kind of a dick tonight.&quot;)[
+	(if: $Drunk &lt; 3)[(link: &quot;You&#39;re sober enough to not engage in his hostility. Instead, you say: Dude, what&#39;s going on with you? You&#39;re being kind of a dick tonight.&quot;)[
 		(replace: ?links)[You&#39;re sober enough to not engage in his hostility. Instead, you say: Dude, what&#39;s going on with you? You&#39;re being kind of a dick tonight.]
 		(show: ?reply1)]
 	]
 	&lt;br&gt;
-	(if: $drinks &gt;= 3)[(link: &quot;You bristle at his aggression, your own drunkenness causing you to lash back out. You snap: Why the fuck are you being such an asshole?&quot;)[
+	(if: $Drunk &gt;= 3)[(link: &quot;You bristle at his aggression, your own drunkenness causing you to lash back out. You snap: Why the fuck are you being such an asshole?&quot;)[
 		(replace: ?links)[You bristle at his aggression, your own drunkenness causing you to lash back out. You snap: Why the fuck are you being such an asshole?]
 		(show: ?reply2)]
 	]
@@ -740,7 +750,7 @@ You take a moment to console Xander, after which he smiles and tells you: &quot;
 (else:)
 [Her arms are crossed and she&#39;s staring up at one of the TV monitors playing old music videos, but she quickly makes room for you as you approach.]
 
-(if: $Drinks &gt;= 3 and $BeccaCrushConvo is false)
+(if: $Drunk &gt;= 3 and $BeccaCrushConvo is false)
 [She looks at you, turns back to the videos, looks away, then turns back to you. &quot;Hey, can we talk?&quot; &lt;br&gt;[[Sure, what&#39;s up?-&gt;BeccaCrush]]]
 
 (if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
@@ -751,12 +761,12 @@ You take a moment to console Xander, after which he smiles and tells you: &quot;
 (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="39" name="BeccaLounge1" tags="convo Becca" position="1650,800" size="100,100">Becca is sitting at a table by herself in the corner. (if: $BeccaHappy is true)
 [She blushes when you make eye contact and waves slightly.]
 (else:)
-[She immediately buries her nose in her phone when you make eye contact. ]
+[It takes her a moment to notice you, then she waves, hesitantly.]
 
 {(if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
-[[ Ask Becca, Hey can I get my car keys? -&gt; BeccaKeys]]]}
+[[ Approach Becca. &quot;Hey can I get my car keys?&quot; -&gt; BeccaKeys]]]}
 
-(if: $Drinks &gt;= 3 and $BeccaCrushConvo is false)
+(if: $Drunk &gt;= 3 and $BeccaCrushConvo is false)
 [After a moment of sitting in awkward silence, Becca finally sighs and looks up. &quot;Hey... Can I talk to you...?&quot; &lt;br&gt;[[Sit down at the table with her.-&gt;BeccaCrush]]]
 
 (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="40" name="BeccaBathroom1" tags="convo Becca" position="1900,800" size="100,100">Becca is in line for the bathroom. (if: $withBecca is true)
@@ -772,7 +782,7 @@ You take a moment to console Xander, after which he smiles and tells you: &quot;
 [She perks up as she sees you. &quot;Hey! I just needed a little break. It&#39;s so loud in there...&quot;]
 (else:)
 [She takes a pull from her vape and gives you a small nod, &quot;Hey.&quot;]
-(if: $Drinks &gt;= 3 and $BeccaCrushConvo is false)
+(if: $Drunk &gt;= 3 and $BeccaCrushConvo is false)
 [She gestures to the milk crate next to her. &quot;Can I talk to you...?&quot; &lt;br&gt;[[Take a seat and say, &quot;Sure, what&#39;s up?&quot;-&gt;BeccaCrush]]]
 (if: $talkedToXanderAboutKeys is true and $hasKeys is false)[
 [[ Ask Becca, Hey can I get my car keys? -&gt; BeccaKeys]]
@@ -872,7 +882,7 @@ xander rbg 4, 43, 16 (upset); happy 6, 61, 23
 
 becca rbg 38, 1, 1 (upset); happy 61, 1, 1</tw-passagedata><tw-passagedata pid="46" name="Xander Pissed" tags="convo" position="200,175" size="100,100">Xander doesn&#39;t want anything to do with you.
 
-(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))</tw-passagedata><tw-passagedata pid="47" name="Send X to B" tags="convo" position="1375,500" size="100,100">You take a moment to fill Xander in on your conversation with Becca, and why she was acting so weird all night.
+(link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))</tw-passagedata><tw-passagedata pid="47" name="Send X to B" tags="convo" position="1450,500" size="100,100">You take a moment to fill Xander in on your conversation with Becca, and why she was acting so weird all night.
 
 He listens wide-eyed, hanging on to your every word. &quot;Whoahhh... Dude. I had no idea! She&#39;s got such a good poker face... So what did you say?!&quot;
 
@@ -901,11 +911,11 @@ Tell Xander your response.
 	Xander grins and claps your shoulder, &quot;Of course! You&#39;ve been here babysitting me all night. Lemme go take care of someone else for a change. I&#39;ll see if I can cheer her up.&quot;
     (link: &quot;Back&quot;)[(go-to: (str: $lastPassageName))(set: $XBTalking to true)]
 ]
-]</tw-passagedata><tw-passagedata pid="48" name="Take the shot" tags="" position="2000,125" size="100,100"></tw-passagedata><tw-passagedata pid="49" name="Take out your phone" tags="convo Becca" position="1650,1100" size="100,100">Opening your messages, an image appears on your screen that makes your heart skip a beat. The sensuality of BAE&#39;s picture sends shivers down your spine. You quickly close your phone and put it away.
+]</tw-passagedata><tw-passagedata pid="48" name="Take out your phone" tags="convo Becca" position="1650,1100" size="100,100">Opening your messages, an image appears on your screen that makes your heart skip a beat. The sensuality of BAE&#39;s picture sends shivers down your spine. You quickly close your phone and put it away.
 
-[[Turn back to Becca-&gt;BeccaKeys3]] </tw-passagedata><tw-passagedata pid="50" name="BeccaKeys3" tags="convo Becca" position="1625,925" size="100,100">Becca looks like she&#39;s about to say something, bu then thinks better of it. &quot;Oh ok. Well, have a good night then.&#39;&#39;
+[[Turn back to Becca-&gt;BeccaKeys3]] </tw-passagedata><tw-passagedata pid="49" name="BeccaKeys3" tags="convo Becca" position="1625,925" size="100,100">Becca looks like she&#39;s about to say something, bu then thinks better of it. &quot;Oh ok. Well, have a good night then.&#39;&#39;
 
-(link: &quot;Thanks, Becca.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="51" name="BeccaKeys2" tags="Becca convo" position="1475,925" size="100,100">You see Becca&#39;s face fall momentarily, but she scrambles to regain her composure. Clearly redirecting her disappointment, she mock-pouts, &quot;Aw that&#39;s such a shame. Caleigh will be bummed.
+(link: &quot;Thanks, Becca.&quot;)[(go-to: (str: $lastPassageName))]</tw-passagedata><tw-passagedata pid="50" name="BeccaKeys2" tags="Becca convo" position="1475,925" size="100,100">You see Becca&#39;s face fall momentarily, but she scrambles to regain her composure. Clearly redirecting her disappointment, she mock-pouts, &quot;Aw that&#39;s such a shame. Caleigh will be bummed.&quot;
 
 //Right at that moment, you feel your phone buzzing.//
 
